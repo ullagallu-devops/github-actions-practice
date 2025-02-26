@@ -18,3 +18,9 @@ jobs:
         
       - name: Print Docker Version
         run: docker version
+        
+      - name: AWS STS Get Caller Identity
+        run: aws sts get-caller-identity
+
+      - name: Check S3 buckets list
+        run : aws s3 ls
